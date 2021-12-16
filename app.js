@@ -45,7 +45,7 @@ class Todo {
     if (text !== "") {
       this._list.push({
         text: text,
-        id: this._list.length + 1,
+        id: Date.now(),
         complate: false,
       });
       this.save();
